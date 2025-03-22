@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{ 
+            
+            border-collapse: collapse;
+            width: 30%;
+            text-align: center;
+        }
+        p{
+            margin-left:20px;          
+            margin-bottom:0px;
+        }
+    </style>
+</head>
+<body>
+    <p>combining colspan and rowspan</p>
+   <table border="1">
+    <tr >
+        <th colspan="2" rowspan="2" border="1">Header(Spans 2 coluns and 2 rows)</th>
+        <th border="1" style="width: 10%;">data</th>
+    </tr>
+    <tr>
+        <td border="1" style="width: 10%;">data</td>
+    </tr>
+    <tr>
+        <td border="1" >data</td>
+        <td border="1">data</td>
+        <td border="1" style="width: 10%;">data</td>
+        
+    </tr>
+   </table> 
+</body>
+</html>
