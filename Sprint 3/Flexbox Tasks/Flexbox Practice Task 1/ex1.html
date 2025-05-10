@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox  Task</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background: orange;
+      padding: 20px;
+      text-align: center;
+      color: white;
+     
+    }
+
+    footer {
+      background: brown;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      background: blue;
+      color: white;
+      flex: 1;
+      padding: 20px;
+    }
+
+    article {
+      background: green;
+      color: white;
+      flex: 3;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="content">
+      <nav>Nav</nav>
+      <article>Article</article>
+    </div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

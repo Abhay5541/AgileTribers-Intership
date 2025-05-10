@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox</title>
+    <style>
+        * {
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            margin-top: 0%;
+            
+        }
+
+        .top-bar {
+            background-color: #3b6b6b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            width: 500px;
+            margin-left: 378px;
+            margin-top: 20px;
+        }
+
+        .width-note {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .header, .features, .footer {
+            background-color:#99c3c7;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .intro-section, .more-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .intro-copy, .more-copy, .hero-image, .cta {
+            background-color: #99c3c7;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+        }
+
+        .cta {
+            flex: 0.5;
+            background-color: #d9e26f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .intro-copy, .more-copy {
+            flex: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">Original Wireframe</div>
+    <div class="container">
+        
+        <div class="width-note">-- 600px --</div>
+
+        <div class="header">Header</div>
+
+        <div class="intro-section">
+            <div class="intro-copy">Intro Copy</div>
+            <div style="display: flex; flex-direction: column; gap: 10px; flex: 1;">
+                <div class="hero-image">Hero Image</div>
+                <div class="cta">Call to Action</div>
+            </div>
+        </div>
+
+        <div class="features">Features</div>
+
+        <div class="more-section">
+            <div class="more-copy">More Copy</div>
+            <div class="cta">Call to Action</div>
+        </div>
+
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

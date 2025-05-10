@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          
+            background-color: #fff;
+        }
+
+        header, footer {
+            background-color: rgb(236, 231, 231);
+            color: black;
+            height: 50px;
+            text-align: center;
+            
+        }
+
+        .intro,  .more {
+            background-color:rgb(236, 231, 231);
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+        }
+        .features{
+            background-color:rgb(236, 231, 231);
+            padding: 20px;
+            text-align: center;
+            height: 150px;
+        }
+
+        .three-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            height: 150px;
+        }
+
+        .three-column > div {
+            background-color: rgb(236, 231, 231);
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+          
+        }
+        ul {
+            list-style-type: none;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="padding: 5px ;"><h2 style="font-weight: bold; font-style:normal;">Logo</h2></header>
+
+        <div class="intro">
+            <nav>
+                <ul style="display: flex; justify-content: center;">
+                <li style="padding-right: 7px;"> <a href="">Home</a></li>
+                <li style="padding-right: 7px;"> <a href="">Products</a></li>
+                <li style="padding-right: 7px;"> <a href="">Services</a></li>
+                <li style="padding-right: 7px;"> <a href="">About</a></li>
+                <li style="padding-right: 7px;"> <a href="">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+
+        
+
+        <div class="features">Feature</div>
+
+        <div class="three-column">
+            <div>column one</div>
+            <div>column two</div>
+            <div>column three</div>
+        </div>
+
+        <footer style="padding: 10px;"><h6>@ Copywrite 2011</h6></footer>
+    </div>
+</body>
+</html>

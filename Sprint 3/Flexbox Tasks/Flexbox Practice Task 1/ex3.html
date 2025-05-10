@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Flex Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 310px;
+      border: 2px solid black;
+    }
+
+    header {
+      background-color: rgb(248, 135, 239);
+      padding: 20px;
+      text-align: center;
+      color: black;
+     
+    }
+
+    .nav {
+      background-color: rgb(175, 41, 219);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      
+    }
+
+    .main {
+      background-color: white;
+      display: flex;
+      flex: 1;
+     
+      text-align: center;
+    }
+
+    article {
+      background: rgb(225, 117, 216);
+      color: black;
+      flex: 1;
+      padding: 20px;
+    }
+
+    nav {
+      background: white;
+      color: black;
+      flex: 3;
+      padding-top: 10px;
+      
+    }
+
+    footer {
+      background-color: rgb(189, 92, 199);
+      padding: 20px;
+      text-align: center;
+      color: black;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="nav">Navigation Bar</div>
+    <div class="main">
+        <article>Left panel</article>
+        <nav>Main Content</nav>
+    </div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
