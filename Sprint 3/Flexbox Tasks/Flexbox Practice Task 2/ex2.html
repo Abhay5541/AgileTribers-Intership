@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff;
+      padding: 20px;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      border: 4px solid #c8e6c9;
+      background-color: #c8e6c9;
+      width: 800px;
+      
+    }
+
+    .top-row {
+      display: flex;
+      gap: 4px;
+    }
+
+    .top-box {
+      background-color: #d87c73;
+      flex: 1;
+      height: 80px;
+    }
+
+    .main-section {
+      display: flex;
+      gap: 4px;
+      height: 300px;
+    }
+
+    .left-panel {
+      flex: 1;
+      background-color: #707c6b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .yellow-box {
+      width: 60px;
+      height: 60px;
+      background-color: #f5e356;
+    }
+
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .green-box {
+      background-color: #8a9962;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="top-row">
+      <div class="top-box"></div>
+      <div class="top-box"></div>
+      <div class="top-box"></div>
+    </div>
+
+   
+    <div class="main-section">
+     
+      <div class="left-panel">
+        <div class="yellow-box"></div>
+      </div>
+
+      <div class="right-panel">
+        <div class="green-box"></div>
+        <div class="green-box"></div>
+        <div class="green-box"></div>
+        <div class="green-box"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

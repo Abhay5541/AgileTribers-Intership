@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      max-width: 800px;
+      margin: auto;
+      height: 80%;
+
+    }
+
+    .header,
+    .footer {
+      background-color: #61dafb;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .footer {
+      background-color: #ff9800;
+    }
+
+    .main-section {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+      height: 270px; 
+    }
+
+    .left-column
+     {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 10px;
+      
+    }
+    .right-column
+       {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      gap: 10px;
+    }
+    .hero,
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      color: white;
+      height: 100px;
+    }
+
+    .hero {
+      background-color: #d1c4e9;
+    }
+
+    .sidebar {
+      background-color: #8bc34a;
+    }
+
+    .main,
+    .extra {
+      padding: 20px;
+      color: white;
+    }
+
+    .main {
+      background-color: #fbc02d;
+      flex: 2; 
+    }
+
+    .extra {
+      background-color: #757575;
+      flex: 1; 
+    }
+
+    .bottom-row {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .related-images {
+      background-color: #4caf50;
+      flex: 2;
+      padding: 20px;
+      color: white;
+    }
+
+    .related-posts {
+      background-color: #f8bbd0;
+      flex: 1;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+
+    <div class="main-section">
+      <div class="left-column">
+        <div class="hero">Hero</div>
+        <div class="sidebar">Sidebar</div>
+      </div>
+
+      <div class="right-column">
+        <div class="main">
+          Main Content
+          <p style="font-size:xx-small;">
+            **If things do not look right, make sure your browser is in "Experimental Mode"
+          </p>
+        </div>
+        <div class="extra">Extra Content</div>
+      </div>
+    </div>
+
+    <div class="bottom-row">
+      <div class="related-images">Related Images</div>
+      <div class="related-posts">Related Posts</div>
+    </div>
+
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
