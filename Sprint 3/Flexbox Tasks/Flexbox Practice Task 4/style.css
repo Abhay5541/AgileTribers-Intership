@@ -1,0 +1,165 @@
+body {
+  background: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+ 
+.ticket {
+  display: flex;
+  width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlW3-NR4kYDLELg1YnLtagh34M_a0o6FT5A&s');
+  background-repeat :none ;
+}
+
+
+
+.ticket-left {
+  width: 70%;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+ 
+  
+}
+
+.top-label {
+  background-color: #0099ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+ 
+}
+
+.top-label h3 {
+  margin: 0;
+}
+
+.top-label p {
+  margin: 2px 0 0;
+  font-size: 12px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.barcode-vertical {
+  margin-right: 5px;
+}
+
+.barcode-vertical img {
+  height: 230px;
+  width: 70px;
+}
+
+.ticket-details {
+  flex: 1;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.info-row span {
+  font-weight: bold;
+  color: #403e3e;
+}
+
+.info-row p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.route {
+  margin: 10px 0 20px 0;
+  padding-left: 35px;
+}
+
+.route h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.route span {
+  margin: 0 10px;
+  font-size: 40px;
+}
+
+.info-row-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  max-width: 50%;
+}
+
+.info-row-bottom span {
+  font-weight: bold;
+  color: #403e3e;
+}
+
+.info-row-bottom p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+
+
+.ticket-right {
+  width: 30%;
+  margin: 0%;
+  color: #2e2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  border-left: 15px dotted #fff;
+}
+
+.right-header {
+  text-align: center;
+  background-color: #1c2952;
+  color: white;
+  padding: 10px;
+  padding-top: 18px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px;
+  height: 39px;
+}
+
+.right-content p {
+  
+  margin: 0;
+}
+ .right-content section{
+     font-weight: bold;
+  color: #403e3e;
+  font-size: 12px;
+ }
+
+.barcode-horizontal {
+  text-align: center;
+  margin-top: auto;
+}
+
+.barcode-horizontal img {
+  width: 80%;
+  height: auto;
+}
+.right-content strong{
+    color: black;
+}
